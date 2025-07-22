@@ -1,0 +1,30 @@
+PythonFlask-Web/
+├──__pycache__
+├──.venv
+├──.vscode
+├── app/
+│   ├── __pycache__
+│   ├── templates/		   				# frontend
+│   │   ├── admin/
+│   │   │   ├── manage_users.html 		# Trang quản trị của admin (Duyệt dki, phân quyền)
+│   │   ├── _post.html					# Riêng 1 bài đăng (View cho toàn bộ user; Edit, Delete cho author) 
+│   │   ├── base.html					# CSS, Navbar
+│   │   ├── edit_post.html				# Chỉnh sửa bài đăng	
+│   │   ├── edit_profile.html			# Chỉnh sửa profile
+│   │   ├── explore.html				# Tổng hợp tất cả bài đăng trong database
+│   │   ├── index.html					# Tạo bài đăng mới	
+│   │   ├── login.html					# Đăng nhập
+│   │   ├── navbar.html				    # Thanh điều hướng (Hiện nội dung phù hợp với từng TH)
+│   │   ├── register.html				# Đăng ký
+│   │   ├── search.html				    # Tìm kiếm trên navbar
+│   │   ├── user.html					# Profile của từng user
+│   ├── __init__.py       				# Khởi tạo app												|
+│   ├── forms.py		   				# WTForms: Login, Registration, EditProfile, Post, Search	|
+│   ├── models.py         				# Model SQLAlchemy: User, Post								| 
+│   ├── routes.py         				# Các route													|=> backend
+├── migrations/			   # Tổng hợp version của db
+├── .flaskenv
+├── app.db				   # Database
+├── config.py             # Cấu hình app
+├── Project_structure.txt
+└── run.py				   # File chạy Flask
